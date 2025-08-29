@@ -380,6 +380,12 @@ template {
   display: none !important;
 }
 
+::selection {
+  background-color: var(--rose-400);
+  color: var(--white);
+  text-shadow: none;
+}
+
 h1,
 h2,
 h3,
@@ -522,7 +528,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: var(--white);
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -545,7 +551,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color: var(--rose-400);
   word-break: break-word;
 }
 
@@ -556,7 +562,7 @@ a>code {
 kbd {
   padding: 0.2rem 0.4rem;
   font-size: 87.5%;
-  color: #fff;
+  color: var(--white);
   background-color: #212529;
   border-radius: 0.2rem;
 }
@@ -570,7 +576,7 @@ kbd kbd {
 pre {
   display: block;
   font-size: 87.5%;
-  color: #212529;
+  color: var(--dark);
 }
 
 pre code {
@@ -2172,7 +2178,7 @@ pre code {
 }
 
 .table .thead-dark th {
-  color: #fff;
+  color: var(--white);
   background-color: #212529;
   border-color: #32383e;
 }
@@ -2283,7 +2289,7 @@ pre code {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: var(--w);
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -4892,6 +4898,7 @@ input[type="button"].btn-block {
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
+  color: var(--rose-100);
 }
 
 .navbar-nav {
@@ -11810,7 +11817,7 @@ h5,
   padding-bottom: 1.5rem;
   padding-left: 20px;
   padding-right: 20px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -11818,7 +11825,7 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover {
-  color: var(--rose-700);
+  color: var(--rose-400) !important;
 }
 
 @media (max-width: 991.98px) {
@@ -12048,6 +12055,7 @@ h5,
 
 .hero-wrap {
   width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.67), rgba(0,0,0,0.67)), url('../images/bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -12099,8 +12107,8 @@ h5,
 }
 
 .hero-wrap .slider-text h1 span {
-  color: var(--rose-700);
-  -webkit-text-fill-color: #fff;
+  color: var(--rose-400);
+  -webkit-text-fill-color: var(--rose-400);
   -webkit-text-stroke-width: 0px;
 }
 
@@ -12369,7 +12377,7 @@ h5,
 }
 
 .ftco-intro {
-  background: var(--rose-700);
+  background: var(--rose-400);
 }
 
 .ftco-intro .intro {
@@ -12384,11 +12392,11 @@ h5,
 }
 
 .intro.color-1 {
-  background: #ab4227;
+  background: var(--rose-600);
 }
 
 .intro.color-2 {
-  background: #a23f25;
+  background: var(--rose-500);
 }
 
 .intro .icon {
@@ -13459,7 +13467,7 @@ textarea.form-control {
   bottom: 0;
   content: '';
   background: #000000;
-  opacity: .1;
+  opacity: .67 !important;
 }
 
 .testimony-section .owl-carousel {
