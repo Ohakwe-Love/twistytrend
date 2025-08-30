@@ -1,9 +1,3 @@
-/*!
- * Bootstrap v4.2.1 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -34,7 +28,7 @@
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-  --bg: #fffafa;
+  --bg: #F5F5F5;
   --ink: #1d1a1a;
   --muted: #6b6062;
   --rose-50: #fff1f5;
@@ -11575,10 +11569,11 @@ h5,
 }
 
 .wrap {
+  padding: 10px 0;
   position: relative;
   z-index: 0;
   width: 100%;
-  background-color: var(--rose-700);
+  background-color: var(--bg);
 }
 
 .wrap .phone {
@@ -11587,11 +11582,11 @@ h5,
 }
 
 .wrap .phone span {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--ink);
 }
 
 .wrap .phone a {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--ink);
   font-size: 12px;
 }
 
@@ -11607,7 +11602,7 @@ h5,
 }
 
 .wrap .reg p a {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--ink);
   text-transform: uppercase;
   font-size: 13px;
 }
@@ -11636,7 +11631,8 @@ h5,
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  color: var(--rose-100);
+  color: var(--white);
+  background: var(--rose-500);
 }
 
 .social-media p a span {
@@ -11644,8 +11640,9 @@ h5,
 }
 
 .social-media p a:hover {
-  background: var(--rose-50);
-  color: var(--rose-700) !important;
+  background-color: var(--ink) !important;
+  color: var(--rose-700);
+  transform: translate(0, -2px);
 }
 
 .ftco-navbar-light {
